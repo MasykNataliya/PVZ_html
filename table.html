@@ -105,7 +105,47 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
     </code></pre>
+
+    <h3>Теорія щодо тегу таблиць </h3>  
+   
+ <p>Основні <strong>теги</strong>  таблиці:  </p> 
+
+<ul>
+      <li> <strong>&lt;table&gt; &lt;/table&gt;</strong> - контейнер для всієї таблиці</li>
+      <li> <strong>&lt;tr&gt; &lt;/tr&gt;</strong> - рядок таблиці. </li>
+      <li> <strong> &lt;td&gt; &lt;/td&gt;</strong> - омірка (дані).</li>
+      <li> <strong>&lt;th&gt; &lt;/th&gt;</strong> - комірка заголовку. </li>
+      <li> <strong>&lt;caption&gt; &lt;/caption&gt;</strong> - заголовок таблиці.</li>
+      <li> <strong>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</strong> — теги групування рядків.</li>
+    </ul>
+  
+ <p>Основними <strong>атрибутами</strong> тегу <strong>table</strong> є: </p> 
+    <ul>
+      <li> <strong>border</strong> — задає товщину рамки таблиці (проте краще через CSS).</li>
+      <li> <strong>cellpadding</strong> — внутрішній відступ у комірках (проте краще через CSS). </li>
+      <li> <strong>cellspacing</strong> — відстань між комірками (проте краще через CSS `border-spacing`)</li>
+      <li> <strong>width </strong>— ширина таблиці (можна в пікселях або %). </li>
+      <li> <strong>height</strong> — висота таблиці (рідко використовується, краще через CSS).  </li>
+      <li> <strong>align </strong>— вирівнювання таблиці (застарілий, краще через CSS).</li>
+    </ul>
+
+    <p>Основними <strong>атрибутами</strong> тегу <strong>tr</strong> є: </p> 
+    <ul>
+      <li> <strong>align</strong> — вирівнювання вмісту рядка ("left", "center", "right").</li>
+      <li> <strong>valign</strong> — вертикальне вирівнювання ("top", "middle", "bottom").  </li>
+      <li> <strong>bgcolor</strong> — колір фону (проте краще через CSS).  </li>
+     </ul>
+
+ <p>Основними <strong>атрибутами</strong> тегів <strong>td</strong> і <strong>th</strong> є: </p> 
+    <ul>
+      <li> <strong>colspan</strong> — об’єднання комірок по горизонталі (кількість колонок).</li>
+      <li> <strong>rowspan</strong> — об’єднання комірок по вертикалі (кількість рядків).  </li>
+      <li> <strong>headers</strong> — зв’язує комірку з заголовком (для доступності). </li>
+      <li> <strong>scope</strong> — визначає область заголовку: "row", "col", "rowgroup", "colgroup". </li>
+      <li> <strong>abbr</strong> — коротка форма заголовку для доступності. </li>
+     </ul>
   </div>
+  
   <div class="aboutscreenshot"></div>
 <h2>Скріншот таблиці</h2>
    <img src="tableimage.png" alt="СкріншотТаблиці" />

@@ -49,7 +49,7 @@
       <section class="title">
   <h2>Основна інформація</h2>
   <div class="about">
-    <p><strong>Приклад коду форми:</strong></p>
+    <h3>Приклад коду форми:</h3>
     <pre><code>
 
   &lt;section class="form-section"&gt;
@@ -87,11 +87,63 @@
 &lt;/html&gt;
 
     </code></pre>
+
+<h3>Теорія щодо тегу форми </h3>  
+   
+ <p>Форма додається до веб сторінки за допомогою <strong>тегу &lt;form&gt; &lt;/form&gt; </strong>  </p> 
+
+ <p>Основними <strong>атрибутами</strong> тегу є: </p> 
+    <ul>
+      <li> <strong>action</strong> - Вказує адресу (URL), куди надсилаються дані форми після відправлення.</li>
+      <li> <strong>method</strong> - Визначає спосіб передачі даних: get (у рядку URL) або post (у тілі запиту). </li>
+      <li> <strong>enctype</strong> - Формат кодування даних при відправці. Використовується з post.</li>
+      <li> <strong>target</strong> - Визначає, де відкриється результат: self (за замовчуванням, у тому ж вікні) blank (нове вікно/вкладка) </li>
+      <li> <strong>autocomplete</strong> - Керує автозаповненням полів: on або off.</li>
+      <li> <strong>novalidate </strong>- Вимикає вбудовану перевірку валідності браузером.</li>
+      <li> <strong>name</strong> - Ім’я форми, яке можна використовувати у JavaScript. </li> 
+      <li> <strong>accept-charset</strong> - Визначає набір символів для відправки даних (наприклад, "UTF-8") </li>
+    </ul>
+
+    <p> Для внесення даних використовується тег <strong>input</strong>. Основні атрибути тегу є: </p> 
+    <ul>
+      <li> <strong>type</strong> — визначає тип поля ("text", "password", "email", "number", "date", "file", "checkbox", "radio", "submit").</li>
+      <li> <strong>name</strong> — ім’я поля, яке використовується при відправці даних. </li>
+      <li> <strong>value</strong> — значення поля (наприклад, текст у кнопці).</li>
+      <li> <strong>placeholder</strong> — текст‑підказка всередині поля. </li>
+      <li> <strong>required</strong> — робить поле обов’язковим для заповнення.</li>
+      <li> <strong>readonly</strong> — поле доступне лише для читання.</li>
+      <li> <strong>disabled</strong> — поле вимкнене. </li> 
+      <li> <strong>maxlength</strong> — максимальна кількість символів.</li>
+      <li> <strong>min, max, step </strong>— обмеження для числових/датових полів.</li>
+    </ul>
+
+    <p> Назву певного поля форми забезпечує тег <strong>label</strong>. Основними атрибутами тегу є: </p> 
+
+    <ul>
+      <li> <strong>for</strong> — зв’язує мітку з конкретним полем.</li>
+   </ul>
+
+   <p> Також у формі часто використовується тег <strong>button</strong>. Основними атрибутами тегу є: </p> 
+
+    <ul>
+     <li> <strong>type</strong> — визначає поведінку кнопки:
+    "submit" - відправляє форму на сервер (за замовчуванням, якщо атрибут не вказаний).
+    "reset" - очищає всі поля форми, повертаючи їх до початкових значень.
+    "button" - звичайна кнопка, яка сама по собі нічого не робить, але корисна для JavaScript‑обробників.</li>
+      <li> <strong>name</strong> — ім’я кнопки, яке може бути відправлене разом із даними форми.</li>
+      <li> <strong>value</strong> — значення кнопки, яке теж може бути передане при відправці.</li>
+      <li> <strong>disabled</strong> — робить кнопку неактивною.</li>
+      <li> <strong>autofocus</strong> — автоматично фокусується на кнопці при завантаженні сторінки.</li>
+      <li> <strong>form</strong> — дозволяє зв’язати кнопку з конкретною формою за її id, навіть якщо кнопка знаходиться поза формою. </li> 
+      <li> <strong>formaction</strong> — перевизначає атрибут action форми. </li>
+      <li> <strong>formmethod</strong> — перевизначає метод відправки ("get" або "post") для конкретної кнопки.</li>
+   </ul>
   </div>
- 
+
+
 <div class="aboutscreenshot"></div>
 <h2>Скріншот форми</h2>
-   <img src="formimage.png" alt="СкріншотФото" />
+   <img src="formimage.png" alt="СкріншотФорми" />
  </div>
 </section>
 
